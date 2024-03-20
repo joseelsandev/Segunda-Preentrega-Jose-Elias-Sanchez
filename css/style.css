@@ -113,6 +113,10 @@ p {
   margin-top: 10px;
 }
 
+.section__h1--p {
+  margin-top: 10px;
+}
+
 footer {
   background-color: #00539b;
   color: #f2f2f2;
@@ -173,7 +177,6 @@ footer {
   color: white; /* Icon color */
   border-radius: 50%; /* Make the icon round */
 }
-
 
 /* Galeria de imagenes  */
 
