@@ -8,9 +8,13 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+body {
+  background-color: #fafafa;
+}
+
 .wrapper-body {
   width: 95%;
-  margin: auto;
+  margin: 50px auto;
 }
 
 /* HEADER */
@@ -47,15 +51,16 @@ ul.header__nav--ul {
 
 /* HEADING */
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 h1,
@@ -122,7 +127,7 @@ footer {
   color: #f2f2f2;
   text-align: center;
   padding: 5px;
-  margin-top: 10px;
+  margin-top: 50px;
 }
 
 .gallery img {
@@ -144,13 +149,14 @@ footer {
 
 /* CTA */
 .section--cta {
-  background-color: #f8f9fa; /* Light gray background color */
-  padding: 20px; /* Add padding inside the section */
-  border-radius: 8px; /* Add rounded corners */
-  text-align: center; /* Center-align text */
-  transition: background-color 0.3s; /* Smooth transition for hover effect */
-  border: 2px solid #24292e; /* Add a border with blue color */
-  position: relative; /* Make the position relative for absolute positioning of icon */
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  border: 2px solid #24292e;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 50px;
 }
 
 .section--cta:hover {
@@ -194,4 +200,94 @@ footer {
   box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
   max-width: 100%;
   padding: 10px;
+}
+
+/* formulario */
+
+.section--formulario {
+  width: 50%;
+  margin: 10px auto;
+  background-color: #fafafa;
+  padding: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media (max-width: 579px) {
+  /* Estilos para pantallas menores a 580px */
+
+  .wrapper-body {
+    width: 95%;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .header__nav--item {
+    font-size: 0.5rem;
+  }
+
+  .laptop-section-productos,
+  .comparacion {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .laptop-section-productos article,
+  .comparacion article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+  }
+
+  .section--formulario {
+    width: 90%;
+  }
+}
+
+@media (max-width: 890px) {
+  .section--formulario {
+    width: 90%;
+  }
+
+  .wrapper-body {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .section--formulario {
+    width: 90%;
+  }
+
+  .wrapper-body {
+    width: 95%;
+  }
+
+  .laptop-section-productos,
+  .comparacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    align-items: stretch;
+    justify-items: center;
+    margin: auto;
+  }
+  .laptop-section-productos article,
+  .comparacion article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  
 }
