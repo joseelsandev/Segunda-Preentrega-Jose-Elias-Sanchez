@@ -1,7 +1,5 @@
 @import "./utilities/variables";
 
-
-
 $primary-color: #00539b;
 $body-color: #fafafa;
 
@@ -69,7 +67,12 @@ h3 {
   font-size: 1rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 10px;
   text-align: center;
 }
@@ -215,6 +218,10 @@ footer {
   padding: 50px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+// section separador
+/* Curved section separator */
+
 
 @media (max-width: 1280px) {
   .section--formulario {
